@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family : "Helvetica";
+  outline: none;
+}
+
+@font-face {
+  font-family : "Helvetica-Bold";
+  src: url(fonts/Helvetica-Bold.ttf);
+}
+
+@font-face {
+  font-family : "Helvetica";
+  src: url(fonts/Helvetica.ttf);
+}
+
+p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 19px;
+  letter-spacing: 0.5px;
+  color: #48474c;
+  font-family : "Helvetica";
+}
+
+span{
+  font-size: 0.7rem;
+  line-height: 19px;
+  letter-spacing: 0.5px;
+  color: #9a9ca1;
+  font-family : "Helvetica";
+  font-weight: 600;
+}
+
+hr {
+  height: 0.5px;
+  width: 100%;
+  background-color: #f1f4fa;
+  color : #f1f4fa;
+  margin: 10px auto;
+}
+
+.body-wrapper {
+  width: 100vw;
+  height : 100vh;
+  display: flex;
+  overflow-x: hidden;
+  overflow-x: hidden;
+}
+/* =========================== Global Css End ========================== */
+
+/* =========================== Side Bar Start =========================== */
+.sidebar {
+  flex: 0.09;
+  background-color: #f3f6fb;
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sidebar .logo{
+  margin : 30px 0;
+  border-radius : 50%;
+  height : 50px;
+  width : 50px;
+  color : white;
+  display : flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #262f57;
+}
+
+.sidebar a{
+  margin : 10px;
+  font-size : 1.4rem;
+  color : rgb(100, 99, 99);
+  text-decoration: none;
+  height : 50px;
+  width : 50px;
+  border-radius: 50%;
+  cursor : pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar a:hover,
+.sidebar a.selected {
+  background-color: #d9e9ff ;
+  color : #2471da;
+}
+/* =================================== SideBar End =================================== */
+
+.container {
+  flex: 1;
+  padding: 2%;
+}
+
+/* =================================== navbar start ======================================== */
+.navbar{
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.navbar i{
+  color : rgb(100, 99, 99);
+}
+
+.navbar .search{
+    border-radius : 7px;
+    background-color: #f5f6fb;
+    width : 70%;
+    padding : 5px;
+    display : flex;
+    align-items: center;
+}
+
+.navbar .search i{
+  padding : 0 15px !important;
+}
+
+.navbar .search input{
+  padding : 7px;
+  flex : 1;
+  background : transparent;
+  border : none;
+  color : #9a9ca1;
+}
+
+.navbar .profile-wrapper{
+  display: flex;
+  align-items: center;
+  width : 250px;
+}
+
+.navbar .profile-wrapper .profile{
+  font-size : 2rem;
+}
+
+.navbar .profile-wrapper .dropdown{
+  margin-left : auto;
+  margin-right: 5%;
+}
+/* =================================== navbar end ======================================== */
+
+/* =================================== main container start ======================================== */
+.container .container-wrapper{
+  display : flex;
+  justify-content: space-between;
+  height : 100%-100px;
+}
+
+/* ================================== Container LEft part Start ============================== */
+
+.container .container-wrapper .left{
+  flex : 0.25;
+}
+
+/* ===================================== Search Room Start =============================== */
+.container .container-wrapper .left .search-room{
+  width : 100%;
+  height : 70%;
+  border-radius:  15px;
+  padding : 25px 15px;
+  box-shadow: 1.5px 1.5px 15px 5px #f1e7e7;
+  display : flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container .container-wrapper .left .search-room h3{
+  margin-bottom: 5px;
+}
+
+.container .container-wrapper .left .search-room .checkin-out{
+  display : flex;
+  align-items: center;
+  justify-content : space-between;
+  margin-top : 15px;
+}
+
+.container .container-wrapper .left .search-room .checkin-out > div{
+  background-color: #e7eaef;
+  border-radius : 7px;
+  width : 48%;
+  height : 50px;
+  padding : 5px 10px;
+}
+
+.container .container-wrapper .left .search-room .row{
+  display : flex;
+  justify-content: space-between;
+  align-items: center;
+  margin : 5px 0;
+}
+
+.container .container-wrapper .left .search-room .row div:nth-child(2){
+  display : flex;
+  align-items: center;
+  justify-content: space-between;
+  width : 25%;
+}
+
+.container .container-wrapper .left .search-room .row div:nth-child(2) button{
+  border-radius: 50%;
+  outline: none;
+  border : none;
+  height : 20px;
+  width : 20px;
+  font-size : 1.3rem;
+  background-color: #dceafd;
+  color : #839fbb;
+  cursor : pointer;
+  line-height: 20px;
+}
+
+.container .container-wrapper .left .search-room .room-type{
+  background-color: #e7eaef;
+  border-radius : 7px;
+  width : 100%;
+  height : 50px;
+  padding : 5px 10px;
+}
+
+.container .container-wrapper .left .search-room > button{
+  width : 100%;
+  height : 50px;
+  border-radius: 50px;
+  color : white;
+  border : none;
+  outline : none;
+  background-color: #277af4;
+  margin : 15px 0;
+  font-size: 1rem;
+}
+/* ================================ Search Room End ================================= */
+
+
+/* =================================== Left End Part Start ============================= */
+.container .container-wrapper .left .left-end{
+  width : 100%;
+  padding : 20px;
+  margin-top : 10%;
+}
+
+.container .container-wrapper .left .left-end .heading{
+  display : flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom : 15px 0;
+}
+
+.container .container-wrapper .left .left-end .row{
+  display : flex;
+  align-items: center;
+  margin : 20px 0;
+  height : 80px;
+}
+
+.container .container-wrapper .left .left-end .row .img-wrapper{
+  height : 80px;
+  width : 80px;
+  position : relative;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-right : 10px;
+}
+
+.container .container-wrapper .left .left-end .row .img-wrapper img{
+  width : 100%;
+  height : 100%;
+  position : absolute;
+}
+
+.container .container-wrapper .left .left-end .row .text{
+  display : flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height : 100%;
+}
+
+.container .container-wrapper .left .left-end .row .fa-chevron-right{
+  margin-left: auto;
+}
+/* =================================== Left End Part End ============================= */
+/* ===================================== Left Portion End ===================================== */
+
+/* ======================================= Right Part Start =================================== */
+.container .container-wrapper .right{
+  flex : 0.7;
+  padding : 20px 0;
+}
+
+.container .container-wrapper .right .header{
+  display : flex;
+  justify-content: space-between;
+  margin : 20px 0;
+}
+
+.container .container-wrapper .right .header span{
+  font-size: 0.9rem;
+  color : #5c5c5e;
+  font-family : "Helvetica";
+}
+
+.container .container-wrapper .right .options button{
+  height : 30px;
+  width : 100px;
+  border-radius: 7px;
+  border : 1.5px solid lightgray;
+  color : gray;
+  margin-right : 5px;
+  background-color: transparent;
+  font-family : "Helvetica-Bold";
+}
+
+.container .container-wrapper .right .options button:hover,
+.container .container-wrapper .right .options button.selected{
+  color :#277af4;
+  border : 1.5px solid #277af4;
+  background-color: #f1f5fe;
+}
+
+.container .container-wrapper .right .row{
+  display : flex;
+  align-items: center;
+  margin : 30px 0;
+  height : 100px;
+}
+
+.container .container-wrapper .right .row .img-wrapper{
+  height : 100px;
+  width : 100px;
+  border-radius: 15px;
+  position: relative;
+  margin-right : 15px;
+}
+
+.container .container-wrapper .right .row .img-wrapper .hot{
+  border-radius : 5px;
+  color : white;
+  padding : 5px 7px; 
+  background-color: #f07e41;
+  font-size: small;
+  position : absolute;
+  top : 7px;
+  left : -7px;
+  z-index : 1;
+}
+
+.container .container-wrapper .right .row .hot>i{
+  margin-right: 5px;
+}
+
+.container .container-wrapper .right .row .img-wrapper img{
+  position : absolute;
+  height : 100%;
+  width : 100%;
+  border-radius: 15px;
+}
+
+.container .container-wrapper .right .row .text{
+  display : flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height : 100%;
+  flex : 1;
+}
+
+.container .container-wrapper .right .row .text h4{
+  margin-top : 12px;
+}
+
+.container .container-wrapper .right .row .text span i{
+  font-size : 1rem;
+  margin-left : 15px;
+}
+
+.container .container-wrapper .right .row .text span i:nth-child(1){
+  margin-left : 0;
+}
+
+.container .container-wrapper .right .row > p{
+  color : #277af4;
+  margin-right : 20px;
+}
+
+.container .container-wrapper .right .row button{
+  height : 35px;
+  width : 150px;
+  border-radius : 20px;
+  border : none;
+  outline : none;
+  color : white;
+  background-color: #277af4;
+}
+
+/* ==================================== Right Part End ========================================= */
